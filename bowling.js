@@ -1,4 +1,5 @@
-function finalScore(score) {
+function finalScore(score1) {
+  let score = [].concat(score1);
   let k = 0;
   // test for negative and null
   let negative = score.filter(x => {
@@ -16,7 +17,7 @@ function finalScore(score) {
     }
   }
 
-  if(score.length > 22 || score.length < 12)
+  if(score.length > 22 || score.length < 11)
   {
     return 'wronginput';
   }
